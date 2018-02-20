@@ -77,15 +77,13 @@ enum ZooStar {
 }
 
 class Zoo {
-    var weeklyHot: ZooStar?
-    init(_ weeklyHot: ZooStar) {
-        self.weeklyHot = weeklyHot
-    }
+    var weeklyHot: Animal?
+    init() { }
 }
 
 
-let zoo = Zoo(.tiger)
-zoo.weeklyHot = ZooStar.tiger
-zoo.weeklyHot = ZooStar.elephant
-zoo.weeklyHot = ZooStar.horse
+let zoo =  Zoo ()
+zoo.weeklyHot = tiger
+zoo.weeklyHot = elephant
+zoo.weeklyHot = horse
 
